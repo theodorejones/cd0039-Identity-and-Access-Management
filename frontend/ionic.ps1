@@ -11,17 +11,17 @@ $ret=0
 if (Test-Path "$basedir/node$exe") {
   # Support pipeline input
   if ($MyInvocation.ExpectingInput) {
-    $input | & "$basedir/node$exe"  "$basedir/node_modules/ionic/bin/ionic" $args
+    $input | & "$basedir/node$exe"  "$basedir/node_modules/@ionic/cli/bin/ionic" $args
   } else {
-    & "$basedir/node$exe"  "$basedir/node_modules/ionic/bin/ionic" $args
+    & "$basedir/node$exe"  "$basedir/node_modules/@ionic/cli/bin/ionic" $args
   }
   $ret=$LASTEXITCODE
 } else {
   # Support pipeline input
   if ($MyInvocation.ExpectingInput) {
-    $input | & "node$exe"  "$basedir/node_modules/ionic/bin/ionic" $args
+    $input | & "node$exe"  "$basedir/node_modules/@ionic/cli/bin/ionic" $args
   } else {
-    & "node$exe"  "$basedir/node_modules/ionic/bin/ionic" $args
+    & "node$exe"  "$basedir/node_modules/@ionic/cli/bin/ionic" $args
   }
   $ret=$LASTEXITCODE
 }
