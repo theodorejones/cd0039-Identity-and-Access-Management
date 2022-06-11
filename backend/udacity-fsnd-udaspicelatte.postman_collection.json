@@ -638,7 +638,7 @@
 	"variable": [
 		{
 			"id": "7da0fa13-ecd9-4d7d-8e38-fde2c81cfdaf",
-			"key": "host",
+			"key": "localhost:5000",
 			"value": "localhost:5000",
 			"type": "string"
 		}
