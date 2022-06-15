@@ -22,9 +22,9 @@ def get_drinks():
         'drinks': [drink.short() for drink in drinks]
     }), 200
 
-@app.route('/drinks-detail', methods=['GET'])
+@app.route('/drinks-detail', methods=['GET'], endpoint='drinks_detail')
 @requires_auth('get:drinks-detail')
-def get_drinks_detail(payload):
+def drinks_detail(f):
     drinks = Drink.query.all()
     return jsonify({
         'success': True,
