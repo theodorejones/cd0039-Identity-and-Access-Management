@@ -24,12 +24,13 @@ def get_drinks():
 
 @app.route('/drinks-detail', methods=['GET'], endpoint='drinks_detail')
 @requires_auth('get:drinks-detail')
-def drinks_detail(f):
-    drinks = Drink.query.all()
-    return jsonify({
-        'success': True,
-        'drinks': [drink.long() for drink in drinks]
-    }), 200
+def drinks_detail():
+    try:
+        return json.dumps({'success':
+        True,
+        'drinks': [drink.long() for drink in Drink.query.all()]}), 200
+    except:
+        return json.dumps({'success': False, 'error': "An error occurred"}), 500
 
 @app.route('/drinks', methods=['POST'])
 @requires_auth('post:drinks')
