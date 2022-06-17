@@ -30,6 +30,7 @@
     "lodash": "^4.17.13",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
+    "udaspicelatte": "file:",
     "zone.js": "~0.8.29"
   },
   "devDependencies": {
