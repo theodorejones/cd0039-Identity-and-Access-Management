@@ -1,0 +1,21 @@
+{
+	"id": "106c7095-a817-4a07-946f-875b7589d93f",
+	"name": "udacity-fsnd-udaspicelatte",
+	"timestamp": "2022-06-27T18:22:10.360Z",
+	"collection_id": "20412963-4f7f5cc0-3225-423f-bf91-6b193f150084",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [],
+	"count": 1,
+	"totalTime": 0,
+	"collection": {
+		"requests": [
+			{
+				"id": "9ace56e7-a7b8-4687-a9b8-cfe5ee5150f6",
+				"method": "GET"
+			}
+		]
+	}
+}
